@@ -2,6 +2,7 @@ let userName = document.querySelector("#userName");
 let headerText = document.querySelector("#headerText");
 let greetingInput = document.querySelector("#greetingInput");
 let quiz = document.querySelector("#quiz");
+let quizQuestions = document.querySelector("#quizQuestions");
 let answerA = document.querySelector("#answerA");
 let answerB = document.querySelector("#answerB");
 let answerC = document.querySelector("#answerC");
@@ -19,6 +20,7 @@ function greeting() {
     headerText.innerHTML = "Hello " + userName.value + ", Welcome to Christmas quiz 2022";
     greetingInput.style.display = 'none';
     quiz.style.display = "block";
+    quizQuestions.innerHTML = "What is the capital of France12?"
 
 
 }
