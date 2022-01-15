@@ -15,6 +15,11 @@
 
 }
 
+#quiz {
+    text-align: center;
+    color:floralwhite;
+}
+
 body {
     background-color: rosybrown;
     text-align: center;
