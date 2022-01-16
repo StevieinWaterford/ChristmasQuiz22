@@ -2,13 +2,25 @@ let userName = document.querySelector("#userName");
 let headerText = document.querySelector("#headerText");
 let greetingInput = document.querySelector("#greetingInput");
 let quiz = document.querySelector("#quiz");
-let quizQuestions = document.querySelector("#quizQuestions");
+let quizQuestion = document.querySelector("#quizQuestion");
 let answerA = document.querySelector("#answerA");
 let answerB = document.querySelector("#answerB");
 let answerC = document.querySelector("#answerC");
 let answerD = document.querySelector("#answerD");
+let iterationNumber = 0;
 let correctChoice = "";
 let score = 0;
+
+let questionList = [
+    "What is the capital of France?",
+    "What is the capital of Germany?",
+    "What is biggest city in the world?",
+    "What is the worlds highest mountain?",
+    "What is the worlds longest river?"
+
+]
+
+
 
 
 quiz.style.display = "none";
@@ -20,7 +32,7 @@ function greeting() {
     headerText.innerHTML = "Hello " + userName.value + ", Welcome to Christmas quiz 2022";
     greetingInput.style.display = 'none';
     quiz.style.display = "block";
-    quizQuestions.innerHTML = "What is the capital of France12?"
+    quizQuestion.innerHTML = questionList[iterationNumber];
 
 
 }
@@ -67,7 +79,7 @@ function q1Submission() {
     if (correctChoice == "b") {
         score += 1
     }
-    console.log(score);
+    iterationNumber += 1;
 
 }
 
